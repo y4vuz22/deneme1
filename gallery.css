@@ -200,115 +200,87 @@
 }
 
 
-/* mainPageImages */
-
-
-
-.mainPageImages {
-    margin: 20px 0;
-    display: flex;
+.galleryImage {
+    height: 120px;
     width: 100%;
-    cursor: pointer;
-}
-
-.panel {
-    border: 2px solid black;
-    background-repeat: no-repeat;
-    border-radius: 50px;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-    flex: 0.2;
-    margin: 5px;
-    position: relative;
-    height: 550px;
-    transition: flex 0.5s ease-in;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.panel.active {
-    flex: 5;
 }
 
 
-
-/* //changingPictures */
-
-
-.bodyContainer1 {
-
+.aboutUsContainer{
     display: flex;
     justify-content: space-around;
-
-
+    
 }
 
-.changingPicturesDiv {
+.textContainer{
+    border: 1px solid black;
+    width: 700px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-    display: flex;
-    width: 650px;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    margin: 10px;
-    border: 1px solid #ccc;
-
+    
 }
 
-.shopPhotos360degree {
-    margin: 10px;
-    display: flex;
-    width: 50%;
-    height: 100%;
-
-    border: 5px solid #ccc;
-    margin-left: 20px;
-}
-
-.shopPhotos360degree {
-    width: 360px;
-    height: 320px;
-    overflow: hidden;
-}
-
-hr {
-    content: "";
-    width: 90%;
-    height: 5px;
-    background: gray;
-    margin: 0 20px;
-    border-radius: 50px;
+p{
+    margin: 15px;
+    letter-spacing: 1px;
+    text-align: justify;
 }
 
 
-
-.vitraLinkDiv {
-
+.abmvitra-sanalturDiv img{
+    width: 370;
+    height: 300px;
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 20px;
 }
 
 
-.vitraLinkDiv1 a img {
-    margin: 10px;
-    width: 375px;
-    height: 260px;
 
-}
 
-.vitraLinkDiv2 a img {
-    margin: 10px;
-    width: 375px;
-    height: 260px;
-}
 
-.vitraAndFacebook {
-
+.gallery {
+    list-style: none;
     display: flex;
-    justify-content: space-around;
-}
-
-.facebookIframe {
-    margin: 20px;
-}
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .gallery li {
+    flex: 0 0 calc(33.33% - 10px);
+    max-width: calc(33.33% - 10px);
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .full-image {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
