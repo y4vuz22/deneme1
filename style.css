@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* header */
+
+/* body{
+    width: 100vw;
+    height: 100vh;
+    
+} */
+
+.header {
+
+
+    /* border: green 1px solid; */
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.iconDivs {
+    width: 100%;
+    display: flex;
+    margin: 0 25px;
+}
+
+
+.iconD {
+    display: flex;
+    /* border: yellow 2px solid; */
+    padding: 10px;
+    height: 100%;
+    align-items: center;
+    font-size: 15px;
+}
+
+.iconD img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.iconD a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.addressDiv {
+    margin-right: 20px;
+    /* border: 2px blue solid; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+
+
+}
+
+.address {
+    display: flex;
+    height: 100%;
+    color: white;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.addressDiv img {
+    margin: 0 10px;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+
+}
+
+
+/* navbar*/
+
+.navbar {
+
+    width: 100%;
+    /* background: wheat; */
+    display: flex;
+    /* justify-content: space-between; */
+
+
+}
+
+
+
+
+.navbar ul {
+
+    flex: 0.5;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 5px groove goldenrod; */
+    height: 100%;
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    color: whitesmoke;
+    
+}
+
+.ulDiv {
+
+    flex: 5;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.navbar ul li {
+    position: relative;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 15px;
+
+}
+
+
+.navbar ul li::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    /* height: 100%; */
+    border: 3px solid yellow;
+    border-width: 0 0 3px 3px;
+    opacity: 0;
+    transition: all 0.6s;
+
+}
+
+.navbar ul li:hover::before {
+    opacity: 1;
+    bottom: -1px;
+    right: -1px;
+    
+}
+
+
+
+.navbar ul li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    /* height: 100%; */
+    border: 3px solid yellow;
+    border-width: 3px 3px 0 0;
+    opacity: 0;
+    transition: all 0.6s;
+    overflow: hidden;
+    
+}
+
+
+
+
+.navbar ul li:hover:after {
+    opacity: 1;
+    top: -1px;
+    right: -1px;
+}
+
+.navbarImgDiv {
+    /* border: 5px inset goldenrod; */
+    cursor: pointer;
+}
+
+.navbar img {
+    
+    padding: 5px;
+    width: 300px;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+/* mainPageImages */
+
+
+
+.mainPageImages {
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.panel {
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    flex: 0.2;
+    margin: 5px;
+    position: relative;
+    height: 550px;
+    transition: flex 0.5s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+
+
+/* //changingPictures */
+
+
+.bodyContainer1 {
+
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.changingPicturesDiv {
+
+    display: flex;
+    width: 650px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    border: 1px solid #ccc;
+
+}
+
+.shopPhotos360degree {
+    margin: 10px;
+    display: flex;
+    width: 50%;
+    height: 100%;
+
+    border: 5px solid #ccc;
+    margin-left: 20px;
+}
+
+.shopPhotos360degree {
+    width: 360px;
+    height: 320px;
+    overflow: hidden;
+}
+
+hr {
+    content: "";
+    width: 90%;
+    height: 5px;
+    background: gray;
+    margin: 0 20px;
+    border-radius: 50px;
+}
+
+
+
+.vitraLinkDiv {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.vitraLinkDiv1 a img {
+    margin: 10px;
+    width: 375px;
+    height: 260px;
+
+}
+
+.vitraLinkDiv2 a img {
+    margin: 10px;
+    width: 375px;
+    height: 260px;
+}
+
+.vitraAndFacebook {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.facebookIframe {
+    margin: 20px;
+}
