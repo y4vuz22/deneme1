@@ -208,7 +208,7 @@
 
 .aboutUsContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly
     
 }
 
@@ -278,9 +278,9 @@ p{
   
   .close-btn {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 20px;
-    font-size: 30px;
+    font-size: 50px;
     color: white;
     cursor: pointer;
   }

@@ -15,11 +15,13 @@ gallery.addEventListener("click", (e) => {
         currentIndex = images.findIndex(img => img.href === e.target.parentElement.href);
         updateImage();
         lightbox.style.display = "flex";
+        
     }
 });
 
 function updateImage() {
     fullImage.src = images[currentIndex].href;
+    
 }
 
 function closeLightbox() {
