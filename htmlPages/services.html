@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/cssPages/services.css">
+</head>
+
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+
+    <img class="servicesImageTable" src="/images/hizmetlerimiz.jpg" alt="">
+
+    <div class="container">
+
+        <div class="servicesImageDiv">
+            <img class="servicesImage" src="/images/shopB.jpg" alt="">
+            <img class="abmvitra-sanalturImg" src="/images/abmvitra-sanaltur.jpg" alt="">
+        </div>
+    </div>
+
+
+
+
+    <div class="servicesListDiv">
+
+
+        <div class="servicesListUlDiv">
+
+            <ul class="servicesListUl">
+                <li>
+                    <h2>Parakende Satış Kanalı</h2>
+                </li>
+                <li>
+                    <p>
+                    <h4>Mimari Destek (Proje Çizim Mutfak-Banyo)</h4> <br>
+                    Evinizde perdeden mutfak masasına kadar yapmak istediğiniz tüm değişimler için İç Mimarımız Mine
+                    Kilitçioğlu Tüm Seçenekleri Sizlerin Beğenisine Sunmaktadır.</p>
+
+                </li>
+                <li>
+                    <p>
+                    <h4>Virtuality Sanal Gerçeklik (3 Boyutlu Deneyim) </h4> <br>
+                    Seçtiğiniz ürünler doğrultusunda banyo ve mutfağınızın içinde dolaşma olanağı sunan Sanal Gerçeklik
+                    Gözlüğü sayesinde hata ihtimalini en aza indiriyoruz.</p>
+
+                </li>
+
+                <li>
+                    <p>
+                    <h4>İşçilikli İşler
+                    </h4> <br>
+                    Tadilat işlerinde ücretsiz keşif ve işinde uzman ustalar sayesinde hayal ettiğiniz gibi mekanlara
+                    kolaylıkla ve yorulmadan ulaşabilirsiniz.</p>
+
+                </li>
+
+                <li>
+                    <p>
+                    <h4>Proje Ekibi
+
+                    </h4> <br>
+                    Tüm Trakya Bölgesinde uzman şatış ekibimizle değerli projelere A’dan Z’ye hizmet vermeye ve çözüm
+                    ortağı olmaya devam ediyoruz.</p>
+
+                </li>
+                <br>
+                <hr>
+                <br>
+                <h2>Toptan Dağıtım Kanalı
+                </h2>
+                <p>Trakya’da 72 ayrı noktaya Vitra/Artema ürünlerinin dağıtımını 1994 yılından beri aynı heyecanla
+                    sürdürmekteyiz.
+                </p>
+            </ul>
+
+        </div>
+
+
+
+        <div class="facebookIframe">
+            <p>Facebook Sayfamız</p>
+            <br>
+            <hr>
+            <br>
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fabminsaat&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="340px" height="500px" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+        const navbarPlaceholder = document.getElementById('navbar-placeholder');
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                navbarPlaceholder.innerHTML = html;
+                document.body.style.overflowX = 'hidden '
+            });
+    </script>
+
+</body>
+
+</html>

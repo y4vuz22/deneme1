@@ -135,4 +135,4 @@ document.addEventListener("keydown", (e) => {
 
 
 
-const largeImageUrl = smallImageUrl.replace("thumbs_abmvitra2.jpg", "abmvitra2.jpg");
+// const largeImageUrl = smallImageUrl.replace("thumbs_abmvitra2.jpg", "abmvitra2.jpg");

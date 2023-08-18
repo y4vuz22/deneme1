@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REQUEST</title>
+
+  <link rel="stylesheet" href="/cssPages/requestForm.css">
+  <link rel="stylesheet" href="/cssPages/navbar.css">
+
+</head>
+
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <div class="requestFormImg">
+    <img src="/images/requestformImages/talepFormu.jpg" alt="">
+  </div>
+
+
+  <div class="requestFormMainContainer">
+
+
+
+    <div class="formContainer">
+      <img src="/images/requestformImages/tadilatci.jpg" alt="">
+
+      <h5>Tüm görüş, öneri ve sorularınız için formu doldurup gönderebilirsiniz.</h5>
+
+      <div>
+        <p>Adınız:</p>
+        <textarea name="" id="" cols="100" rows="5"></textarea>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="abmvitra-sanalturDiv">
+      <img src="/images/abmvitra-sanaltur.jpg" alt="">
+      <iframe
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fabminsaat&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+
+
+  </div>
+
+
+
+  <script>
+    const navbarPlaceholder = document.getElementById('navbar-placeholder');
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(html => {
+        navbarPlaceholder.innerHTML = html;
+
+      });
+  </script>
+
+
+
+
+</body>
+
+</html>

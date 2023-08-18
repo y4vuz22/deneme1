@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+.abousUsImage {
+    height: 120px;
+    width: 100%;
+}
+
+
+.aboutUsContainer{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.textContainer{
+    border: 1px solid black;
+    width: 700px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    
+}
+
+p{
+    margin: 15px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+
+.abmvitra-sanalturDiv img{
+    width: 370;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}

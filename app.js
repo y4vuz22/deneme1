@@ -7,8 +7,8 @@ const panelT1 = document.querySelectorAll('.panel');
 let index = 0;
 
 let images = [
-    "images/changingPictures/degisen1.jpg",
-    "images/changingPictures/degisen2.jpg"
+    "/images/changingPictures/degisen1.jpg",
+    "/images/changingPictures/degisen2.jpg"
 
 ]
 
@@ -22,17 +22,17 @@ function change() {
 
 window.onload = function () {
     setInterval(change, 3000);
-    setInterval(changeBodyImages, 4000);
+    setInterval(changeBodyImages, 2000);
 };
 
 let indexTwo=0;
 
 let bodyImages =[
-    "images/mainPageImages/res1.jpg",
-    "images/mainPageImages/res2.jpg",
-    "images/mainPageImages/res3.jpg",
-    "images/mainPageImages/res4.jpg",
-    "images/mainPageImages/res5.jpg",
+    "/images/mainPageImages/res1.jpg",
+    "/images/mainPageImages/res2.jpg",
+    "/images/mainPageImages/res3.jpg",
+    "/images/mainPageImages/res4.jpg",
+    "/images/mainPageImages/res5.jpg",
 ]
 
 function changeBodyImages() {

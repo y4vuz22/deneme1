@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/cssPages/products.css">
+</head>
+
+<body>
+
+
+    <div id="navbar-placeholder"></div>
+
+
+
+
+    <img class="productsImage" src="/images/urunler.jpg" alt="">
+
+
+
+
+    <div class="productsContainer">
+
+
+
+        <div class="productsAll">
+
+            <div class="products">
+                <p>Seramik Sağlık Gereçleri </p>
+                <a href="https://www.vitra.com.tr/">
+                    <img src="/images/productsImages/abm-seramik-banyo-ürünleri.jpg" alt=""> </a>
+            </div>
+
+
+
+            <div class="products">
+                <p>Banyo Mobilyaları</p>
+                <a href="https://www.vitra.com.tr/">
+                    <img src="/images/productsImages/abm-banyo-mobilyaları.jpg" alt="">
+                </a>
+            </div>
+
+
+            <div class="products">
+                <p>Yıkama Alanları</p>
+                <a href="https://www.vitra.com.tr/"> 
+                    <img src="/images/productsImages/abm-banyo-kuvetleri.jpg" alt="">
+                </a>
+
+            </div>
+
+
+            <div class="products">
+                <p>Karo Seramikler</p>
+                <a href="https://www.vitra.com.tr/"> 
+                    <img src="/images/productsImages/abm-karo-seramikler.jpg" alt="">
+                </a>
+
+            </div>
+
+            <div class="products">
+                <p>Tamamlayıcı Ürünler</p>
+                <a href="https://www.vitra.com.tr/">
+                     <img src="/images/productsImages/abm-tamamlayıcı-ürünleri (1).jpg"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="products">
+                <p>Yapı Kimyasalları</p>
+                <a href="https://www.vitra.com.tr/"> 
+                    <img src="/images/productsImages/abm-yapı-kimyasalları.jpg" alt="">
+                </a>
+
+            </div>
+            <div class="products">
+                <p>Franke Mutfak ve Banyo Sistemleri</p>
+                <a href="https://www.vitra.com.tr/"> 
+                    <img src="/images/productsImages/abm-franke-ankastre.jpg" alt="">
+                </a>
+
+            </div>
+            <div class="products">
+                <p>Armatür ve Banyo Aksesuarları</p>
+                <a href="https://www.vitra.com.tr/"> <img
+                        src="/images/productsImages/abm-armatür-ve-banyo-aksuseuarları.jpg" alt=""> </a>
+
+            </div>
+
+            <div class="products">
+                <p>İntema Mutfak</p>
+
+                <a href="https://www.vitra.com.tr/">
+                     <img src="/images/productsImages/abm-intema-mutfak.jpg" alt=""> </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="abmvitra-sanalturDiv">
+            <img src="/images/abmvitra-sanaltur.jpg" alt="">
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fabminsaat&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+
+    </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+        const navbarPlaceholder = document.getElementById('navbar-placeholder');
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                navbarPlaceholder.innerHTML = html;
+                document.body.style.overflowX='hidden '
+            });
+    </script>
+
+
+
+</body>
+
+</html>

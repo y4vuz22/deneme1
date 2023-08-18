@@ -1,0 +1,69 @@
+
+
+
+.servicesImageTable{
+    height: 120px;
+    width: 100%;
+}
+
+
+.servicesImageDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.servicesImage {
+    border: 3px inset black;
+    width: 800px;
+}
+
+.abmvitra-sanalturImg {
+    width: 340px;
+    height: 300px;
+}
+
+
+
+.servicesListDiv {
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.servicesListUlDiv {
+
+    width: 725px;
+    border: 1px solid black;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+
+}
+
+.servicesListUl li {
+    list-style-type: none;
+    text-align: justify;
+}
+
+.servicesListUl li h2,
+.servicesListUl li p {
+
+
+    margin: 10px 0;
+}
+
+.facebookIframe{
+    border: 3px inset black;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.facebookIframe p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}

@@ -7,16 +7,15 @@
 
 /* header */
 
-/* body{
-    width: 100vw;
-    height: 100vh;
-    
-} */
+body {
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+
+}
 
 .header {
 
 
-    /* border: green 1px solid; */
+
     width: 100%;
     height: 50px;
     background-color: black;
@@ -36,7 +35,7 @@
 
 .iconD {
     display: flex;
-    /* border: yellow 2px solid; */
+
     padding: 10px;
     height: 100%;
     align-items: center;
@@ -57,6 +56,7 @@
 
 
 .addressDiv {
+    width: 100%;
     margin-right: 20px;
     /* border: 2px blue solid; */
     height: 100%;
@@ -87,14 +87,21 @@
 }
 
 
+
+
+
+
+
 /* navbar*/
+
+
 
 .navbar {
 
     width: 100%;
-    /* background: wheat; */
+
     display: flex;
-    /* justify-content: space-between; */
+
 
 
 }
@@ -123,28 +130,23 @@
 }
 
 
-.navbar ul li {
-    position: relative;
-    padding: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 0 15px;
 
-}
+.navbar ul a {
 
-.navbar ul li a {
     text-decoration: none;
-    color: whitesmoke;
+    color: gold;
+    font-weight: bold;
+    position: relative;
 
 }
 
 
-.navbar ul li::before {
+.navbar ul a::before {
     content: "";
     position: absolute;
     bottom: 0px;
     left: 0px;
-    width: 100%;
+    width: 110%;
     /* height: 100%; */
     border: 3px solid yellow;
     border-width: 0 0 3px 3px;
@@ -153,22 +155,23 @@
 
 }
 
-.navbar ul li:hover::before {
+.navbar ul a:hover::before {
     opacity: 1;
-    bottom: -1px;
+    bottom: -8px;
     right: -1px;
 
 }
 
 
 
-.navbar ul li::after {
+
+.navbar ul a::after {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
-    /* height: 100%; */
+    width: 110%;
+
     border: 3px solid yellow;
     border-width: 3px 3px 0 0;
     opacity: 0;
@@ -180,14 +183,22 @@
 
 
 
-.navbar ul li:hover:after {
+.navbar ul a:hover:after {
     opacity: 1;
-    top: -1px;
+    top: -8px;
     right: -1px;
 }
 
+
+
+
+
+
+
+
+
 .navbarImgDiv {
-    /* border: 5px inset goldenrod; */
+
     cursor: pointer;
 }
 
@@ -196,42 +207,5 @@
     padding: 5px;
     width: 300px;
     height: 80px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
 
-
-.abousUsImage {
-    height: 120px;
-    width: 100%;
-}
-
-
-.aboutUsContainer{
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-
-.textContainer{
-    border: 1px solid black;
-    width: 700px;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-    
-}
-
-p{
-    margin: 15px;
-    letter-spacing: 1px;
-    text-align: justify;
-}
-
-
-.abmvitra-sanalturDiv img{
-    width: 370;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
 }

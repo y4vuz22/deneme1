@@ -1,0 +1,50 @@
+
+
+.productsImage{
+    width: 100%;
+}
+
+.productsContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.productsAll {
+    border: 1px solid black;
+    width: 800px;
+    display: grid;
+    grid-template-columns: auto auto ;
+
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.products {
+
+    border: 1px solid black;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.productsAll div p {
+
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.abmvitra-sanalturDiv img{
+    width: 370;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
