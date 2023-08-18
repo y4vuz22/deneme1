@@ -88,11 +88,11 @@
 
     </div>
 
-    <script src="/app.js"></script>
+    <script src="app.js"></script>
 
     <script>
         const navbarPlaceholder = document.getElementById('navbar-placeholder');
-        fetch('navbar.html')
+        fetch('/htmlPages/navbar.html')
             .then(response => response.text())
             .then(html => {
                 navbarPlaceholder.innerHTML = html;
