@@ -1,11 +1,8 @@
-/* mainPageImages */
+/* INDEX.HTML CSS  */
 
-
-
-
-
+/* anasayfa büyük resimler başlangıç */
 .panel {
-    border: 2px solid black;
+
     background-repeat: no-repeat;
     cursor: pointer;
     width: 100%;
@@ -13,66 +10,68 @@
     display: block;
     position: relative;
     transition: flex 0.5s ease-in;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: 5px inset gray;
+
+    border: 6px solid black;
+    box-shadow: rgba(177, 33, 33, 0.75) 0px 5px 15px;
 }
 
+/* anasayfa büyük resimler bitiş */
 
 
 
-/* //changingPictures */
 
+/* changingPictures start */
 
 .bodyContainer1 {
 
     display: flex;
     justify-content: space-evenly;
-
-
-}
-
-.changingPicturesDiv {
-
-    display: flex;
-    width: 510px;
-    height: auto;
-    /* position: relative; */
-    overflow: hidden;
-    margin: 10px;
-    border: 5px solid #ccc;
+    margin: 20px;
 
 }
+
+
 
 .changingPictures1 {
     border: 5px solid black;
-    width: 500px;
+    box-shadow: rgba(177, 33, 33, 0.75) 0px 5px 15px;
+
+    width: 100%;
     height: auto;
     /* display: none; */
 }
 
-.shopPhotos360degree {
+/* changingPictures finish */
+
+
+
+.shopPhotos360degree img {
     margin: 10px;
     display: flex;
-    
-    height: auto;
+    width: 360px;
+    height: 320px;
+
+    /* height: auto; */
+    overflow: hidden;
+    box-shadow: rgba(177, 33, 33, 0.75) 0px 5px 15px;
 
     border: 5px solid #ccc;
     margin-left: 20px;
 }
 
-.shopPhotos360degree {
-    width: 360px;
-    height: 320px;
-    overflow: hidden;
-}
+
 
 hr {
+    display: flex;
     content: "";
-    width: 90%;
-    height: 5px;
-    background: gray;
-    margin: 0 20px;
+    width: 100%;
+    height:8px;
+    background: blue;
+    box-shadow: rgba(177, 33, 33, 0.85) 0px 15px 25px;
+
     border-radius: 50px;
+    justify-content: center;
+
 }
 
 
@@ -80,23 +79,31 @@ hr {
 .vitraLinkDiv {
 
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
 
 }
 
 
-.vitraLinkDiv1 a img {
+.vitraLinkDiv a img {
+    position: relative;
+    border: 5px solid palegoldenrod;
     margin: 10px;
     width: 375px;
     height: 260px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.3s;
+
 
 }
 
-.vitraLinkDiv2 a img {
-    margin: 10px;
-    width: 375px;
-    height: 260px;
+
+.vitraLinkDiv a img:hover {
+    opacity: 0.9;
+    box-shadow: rgba(177, 33, 33, 0.75) 0px 5px 15px;
+    top: 3px;
+    right: 3px;
 }
+
 
 .vitraAndFacebook {
 
@@ -105,27 +112,55 @@ hr {
 }
 
 .facebookIframe {
-    margin: 20px;
+    position: relative;
+    margin-top: 10px;
+    border: 3px solid palegoldenrod;
+    padding: 15px;
+    box-shadow: rgba(177, 33, 33, 0.75) 0px 5px 15px;
+    transition: 1s;
+}
+
+.facebookIframe p {
+    color: antiquewhite;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 
-@media (max-width: 1105px) {
+.facebookIframe:hover {
+    opacity: 0.9;
+    box-shadow: rgba(177, 33, 33, 0.75) 0px 5px 15px;
+    top: 3px;
+    right: 3px;
+    border: inset 3px black;
+}
 
-    .bodyContainer1 {
+
+
+
+
+@media (max-width: 805px) {
+
+
+
+    .changingPicturesDiv {
+        /* width: 700px; */
+        height: auto;
+    }
+
+    .vitraLinkDiv {
         display: block;
-        /* width: auto; */
     }
 
-    .changingPictures1 {
-        width: 500px;
-    }
 
     .vitraAndFacebook {
         display: block;
     }
 
-    hr {
-        width: auto;
+    .bodyContainer1 {
+        display: block;
     }
+
 
 }
