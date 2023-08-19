@@ -15,13 +15,13 @@ gallery.addEventListener("click", (e) => {
         currentIndex = images.findIndex(img => img.href === e.target.parentElement.href);
         updateImage();
         lightbox.style.display = "flex";
-        
+
     }
 });
 
 function updateImage() {
     fullImage.src = images[currentIndex].href;
-    
+
 }
 
 function closeLightbox() {
@@ -70,12 +70,25 @@ document.addEventListener("keydown", (e) => {
 
 
 
+const navbarPlaceholder = document.getElementById('navbar-placeholder');
+fetch('navbar.html')
+    .then(response => response.text())
+    .then(html => {
+        navbarPlaceholder.innerHTML = html;
+        document.body.style.overflowX = 'hidden '
+    });
 
 
 
 
+const footerPlaceHolder = document.getElementById('footerPlaceHolder');
+fetch('/htmlPages/footer.html')
+    .then(response => response.text())
+    .then(html => {
+        footerPlaceHolder.innerHTML = html;
+        document.body.style.overflowX = 'hidden '
 
-
+    });
 
 
 

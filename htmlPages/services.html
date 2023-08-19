@@ -101,16 +101,9 @@
 
 
 
+    <div id="footerPlaceHolder"></div>
 
-    <script>
-        const navbarPlaceholder = document.getElementById('navbar-placeholder');
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(html => {
-                navbarPlaceholder.innerHTML = html;
-                document.body.style.overflowX = 'hidden '
-            });
-    </script>
+    <script src="/jsPages/services.js"></script>
 
 </body>
 

@@ -9,7 +9,7 @@ let index = 0;
 let images = [
     "/images/changingPictures/degisen1.jpg",
     "/images/changingPictures/degisen2.jpg"
-    
+
 
 ]
 
@@ -26,9 +26,9 @@ window.onload = function () {
     setInterval(changeBodyImages, 2000);
 };
 
-let indexTwo=0;
+let indexTwo = 0;
 
-let bodyImages =[
+let bodyImages = [
     "/images/mainPageImages/res1.jpg",
     "/images/mainPageImages/res2.jpg",
     "/images/mainPageImages/res3.jpg",
@@ -75,5 +75,24 @@ function selectImage() {
 // }
 
 
+const navbarPlaceholder = document.getElementById('navbar-placeholder');
+fetch('/htmlPages/navbar.html')
+    .then(response => response.text())
+    .then(html => {
+        navbarPlaceholder.innerHTML = html;
+        document.body.style.overflowX = 'hidden '
+
+    });
 
 
+
+
+    
+const footerPlaceHolder = document.getElementById('footerPlaceHolder');
+fetch('/htmlPages/footer.html')
+    .then(response => response.text())
+    .then(html => {
+        footerPlaceHolder.innerHTML = html;
+        document.body.style.overflowX = 'hidden '
+
+    });

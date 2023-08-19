@@ -1,0 +1,36 @@
+.footer1 {
+
+    width: 100%;
+    height: 25px;
+    background: gray;
+}
+
+
+
+.iconDivs{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 75px;
+    background: #222534;
+}
+
+.footer2 p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-style: oblique;
+    text-align: center;
+}
