@@ -9,6 +9,7 @@ let index = 0;
 let images = [
     "/images/changingPictures/degisen1.jpg",
     "/images/changingPictures/degisen2.jpg"
+    
 
 ]
 
