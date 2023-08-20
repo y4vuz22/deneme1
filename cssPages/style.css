@@ -117,8 +117,7 @@ hr {
 }
 
 .facebookIframe {
-    width: 100%;
-    height: auto;
+  
     position: relative;
     margin-top: 10px;
     border: 3px solid palegoldenrod;
@@ -147,7 +146,7 @@ hr {
 
 
 
-@media (max-width: 805px) {
+@media (max-width: 857px) {
 
 
 
