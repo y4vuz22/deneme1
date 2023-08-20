@@ -20,4 +20,22 @@
 
     </div>
     <p> ABM İnşaat Copyright 2023</p>
+
+
+    <script>
+
+const footerPlaceHolder = document.getElementById('footerPlaceHolder');
+fetch('/htmlPages/footer.html')
+    .then(response => response.text())
+    .then(html => {
+        footerPlaceHolder.innerHTML = html;
+        document.body.style.maxWidth = '100vw'
+        // document.body.style.boxSizing='border-box'
+
+    });
+
+    </script>
+
+
+
 </div>

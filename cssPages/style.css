@@ -7,7 +7,7 @@
     cursor: pointer;
     width: 99%;
     height: auto;
-    /* display: block; */
+
     position: relative;
     transition: flex 0.5s ease-in;
 
@@ -17,6 +17,8 @@
 
 .mainPageImages {
     margin: 30px;
+
+
 }
 
 /* anasayfa büyük resimler bitiş */
@@ -26,15 +28,21 @@
 /* changingPictures start */
 
 .bodyContainer1 {
-    /* width: 100%; */
-    height: auto;
+
+
+
+
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 30px;
-    /* border: 5px solid yellow; */
+    justify-content: space-around;
+
+    margin: 0 30px;
+
+
+
 
 }
+
 
 
 
@@ -42,7 +50,7 @@
     border: 5px solid black;
     box-shadow: rgba(177, 33, 33, 0.75) 0px 5px 15px;
 
-    width: 100%;
+    width: 375px;
 
     height: auto;
 
@@ -53,17 +61,17 @@
 
 
 .shopPhotos360degree img {
-    margin: 10px;
-    display: flex;
+
+
     width: 350px;
-    /* height: 320px; */
+
 
     height: auto;
-    overflow: hidden;
+
     box-shadow: rgba(177, 33, 33, 0.75) 0px 5px 15px;
 
     border: 5px solid #ccc;
-    margin-left: 20px;
+
 }
 
 

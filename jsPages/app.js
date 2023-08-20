@@ -87,12 +87,17 @@ fetch('/htmlPages/navbar.html')
 
 
 
-    
+
 const footerPlaceHolder = document.getElementById('footerPlaceHolder');
 fetch('/htmlPages/footer.html')
     .then(response => response.text())
     .then(html => {
         footerPlaceHolder.innerHTML = html;
-        document.body.style.overflowX = 'hidden '
+        // document.body.style.maxWidth = '100%'
+        // document.body.style.boxSizing='border-box'
+        document.body.style.margin = '0';
+        document.body.style.padding = '0';
+        document.body.style.boxSizing = 'border-box';
+
 
     });

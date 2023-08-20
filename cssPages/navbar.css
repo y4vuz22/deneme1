@@ -12,7 +12,9 @@
 
 .header {
 
-margin-top: 15px;
+    
+
+    margin-top: 15px;
     position: relative;
     width: 100%;
     height: 50px;
@@ -104,6 +106,7 @@ margin-top: 15px;
 
 
 .navbar {
+    
 
     /* border: 3px solid black; */
     width: 100%;
