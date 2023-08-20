@@ -26,10 +26,13 @@
 /* changingPictures start */
 
 .bodyContainer1 {
-
+    /* width: 100%; */
+    height: auto;
     display: flex;
-    justify-content: space-evenly;
-    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    /* border: 5px solid yellow; */
 
 }
 
@@ -40,9 +43,9 @@
     box-shadow: rgba(177, 33, 33, 0.75) 0px 5px 15px;
 
     width: 100%;
-    
+
     height: auto;
-    
+
 }
 
 /* changingPictures finish */
@@ -52,7 +55,7 @@
 .shopPhotos360degree img {
     margin: 10px;
     display: flex;
-    width: 360px;
+    width: 350px;
     /* height: 320px; */
 
     height: auto;
@@ -80,10 +83,20 @@ hr {
 
 
 
+.vitraAndFacebook {
+
+    width: 100%;
+}
+
 .vitraLinkDiv {
 
     display: flex;
+
     /* flex-direction: column; */
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-right: 50px;
 
 }
 
@@ -111,13 +124,21 @@ hr {
 
 .vitraAndFacebook {
 
+
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 30px 30px;
 }
 
+
+.facebookframeDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .facebookIframe {
-  
+    width: 370px;
     position: relative;
     margin-top: 10px;
     border: 3px solid palegoldenrod;
@@ -144,22 +165,41 @@ hr {
 
 
 
+@media (max-width: 1300px) {
+
+
+
+
+
+
+
+
+    .vitraAndFacebook {
+
+        display: block;
+        text-align: center;
+
+    }
+
+
+}
+
 
 
 @media (max-width: 857px) {
 
 
 
- 
+
 
     .vitraLinkDiv {
         display: block;
-        
+
     }
 
 
     .vitraAndFacebook {
-        display: inline-block;
+        display: block;
         text-align: center;
 
     }

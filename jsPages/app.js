@@ -93,6 +93,6 @@ fetch('/htmlPages/footer.html')
     .then(response => response.text())
     .then(html => {
         footerPlaceHolder.innerHTML = html;
-        // document.body.style.overflowX = 'hidden '
+        document.body.style.overflowX = 'hidden '
 
     });
