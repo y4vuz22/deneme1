@@ -1,11 +1,12 @@
-
 <link rel="stylesheet" href="/cssPages/navbar.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 <div class="header">
-   
+
 
 
     <div class="iconDivs">
@@ -47,47 +48,50 @@
 
     <div class="ulDiv">
 
-     
-        
-        <ul >
-              
+
+        <i class="menuIcon"> <img src="/images/menu.jpg" alt=""></i>
+        <ul>
+
             <a class="aL" href="/index.html">ANASAYFA</a>
             <a class="aL" href="/htmlPages/aboutUs.html">HAKKIMIZDA</a>
             <a class="aL" href="/htmlPages/gallery.html">GALERİ</a>
             <a class="aL" href="/htmlPages/services.html">HİZMETLERİMİZ</a>
+         
             <a class="aL" href="/htmlPages/products.html">ÜRÜNLERİMİZ</a>
             <a href="/htmlPages/requestForm.html">TALEP FORMU</a>
             <a href="contactUs.html">İLETİŞİM</a>
             <a>BAYİ GİRİŞİ</a>
-            
-            <label for="check" class="checkbtn">
-                <i class="fa fa-bars"></i>
-              </label>
-    
+
+
+         
+
 
         </ul>
+
+
+
     </div>
 
 
-  
+
     <script>
 
-        
-const footerPlaceHolder = document.getElementById('footerPlaceHolder');
-fetch('/htmlPages/footer.html')
-    .then(response => response.text())
-    .then(html => {
-        footerPlaceHolder.innerHTML = html;
-        // document.body.style.maxWidth = '100%'
-        // document.body.style.boxSizing='border-box'
-        document.body.style.margin = '0';
-        document.body.style.padding = '0';
-        document.body.style.boxSizing = 'border-box';
+
+        const footerPlaceHolder = document.getElementById('footerPlaceHolder');
+        fetch('/htmlPages/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                footerPlaceHolder.innerHTML = html;
+                // document.body.style.maxWidth = '100%'
+                // document.body.style.boxSizing='border-box'
+                document.body.style.margin = '0';
+                document.body.style.padding = '0';
+                document.body.style.boxSizing = 'border-box';
 
 
-    });
+            });
     </script>
 
-    
+
 
 </nav>
