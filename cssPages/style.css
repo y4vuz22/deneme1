@@ -101,7 +101,7 @@ hr {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 
 
 }
@@ -213,7 +213,7 @@ hr {
 
 
     .vitraAndFacebook {
-        border: 5px solid yellow;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;

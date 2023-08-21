@@ -118,7 +118,7 @@
 }
 
 body {
-    
+
     background-color: #222534;
     /* background-image: url(/images/galleryBackround.jpg); */
     background-repeat: no-repeat;
@@ -157,8 +157,16 @@ body {
     transform: skew(-25deg);
     width: 100%;
 
+    cursor: pointer;
+
+}
 
 
+
+.ulDiv ul a:hover {
+    background: white;
+    color: black;
+    transition: 1s;
 }
 
 
@@ -180,7 +188,7 @@ body {
 
 }
 
-ö
+
 
 .navbar ul a:hover::before {
 
@@ -243,10 +251,7 @@ body {
 
 
 
-    .ulDiv ul a {
 
-        background-color: blue;
-    }
 
 
     .addressDiv {
@@ -279,7 +284,7 @@ body {
 
     }
 
-  
+
 
 
 
@@ -303,6 +308,3 @@ body {
 
 
 }
-
-
-
