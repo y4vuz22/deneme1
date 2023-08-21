@@ -5,10 +5,11 @@
 
     background-repeat: no-repeat;
     cursor: pointer;
-    width: 99%;
+    width: 100%;
     height: auto;
-
-    position: relative;
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
     transition: flex 0.5s ease-in;
 
     border: 6px solid black;
@@ -16,7 +17,8 @@
 }
 
 .mainPageImages {
-    margin: 30px;
+    /* margin: 30px 30px; */
+    width: 100%;
 
 
 }
@@ -36,8 +38,8 @@
     align-items: center;
     justify-content: space-around;
 
-    margin: 0 30px;
-
+    margin: 10px 0px;
+    width: 100%;
 
 
 
@@ -92,19 +94,25 @@ hr {
 
 
 .vitraAndFacebook {
-
+    /* border: 5px solid yellow; */
+    margin: 15px 0;
     width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+
 }
 
 .vitraLinkDiv {
 
     display: flex;
 
-    /* flex-direction: column; */
+
     justify-content: center;
-    width: 100%;
+
     height: auto;
-    margin-right: 50px;
+
 
 }
 
@@ -113,8 +121,8 @@ hr {
     position: relative;
     border: 5px solid palegoldenrod;
     margin: 10px;
-    width: 375px;
-    height: 260px;
+    width: 350px;
+    /* height: 260px; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: 0.3s;
 
@@ -130,17 +138,10 @@ hr {
 }
 
 
-.vitraAndFacebook {
-
-
-    display: flex;
-    justify-content: center;
-    margin: 30px 30px;
-}
 
 
 .facebookframeDiv {
-    width: 100%;
+    /* width: 400px; */
     display: flex;
     justify-content: center;
 }
@@ -184,8 +185,9 @@ hr {
 
     .vitraAndFacebook {
 
-        display: block;
+        display: inline-block;
         text-align: center;
+        
 
     }
 
@@ -201,19 +203,23 @@ hr {
 
 
     .vitraLinkDiv {
-        display: block;
-
+        
+        display: flex;
+        flex-direction: column;
+justify-content: center;
     }
 
 
     .vitraAndFacebook {
-        display: block;
-        text-align: center;
+        border: 5px solid yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
     }
 
     .bodyContainer1 {
-        display: block;
+        display: flex;
         text-align: center;
     }
 
