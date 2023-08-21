@@ -118,6 +118,7 @@
 }
 
 body {
+    
     background-color: #222534;
     /* background-image: url(/images/galleryBackround.jpg); */
     background-repeat: no-repeat;
@@ -179,17 +180,7 @@ body {
 
 }
 
-
-.navbar ul a:hover {
-    opacity: 0.9;
-    background: white;
-    color: black;
-    /* border: red 2px solid; */
-    top: 3px;
-    right: 3px;
-    z-index: 2;
-
-}
+ö
 
 .navbar ul a:hover::before {
 
@@ -218,11 +209,11 @@ body {
 
 
 
-.menuIcon img{
+.menuIcon img {
     width: 100px;
     height: 50px;
     z-index: 3;
-    
+
 }
 
 
@@ -258,6 +249,10 @@ body {
     }
 
 
+    .addressDiv {
+        display: none;
+    }
+
 
 
 
@@ -278,10 +273,28 @@ body {
         margin: 10px 0;
     }
 
-    .navbar a{
+    .navbar a {
         /* display: none; */
         visibility: hidden;
 
+    }
+
+  
+
+
+
+
+
+}
+
+
+
+@media (max-width: 375px) {
+
+
+
+    .addressDiv {
+        display: none;
     }
 
 
@@ -290,3 +303,6 @@ body {
 
 
 }
+
+
+

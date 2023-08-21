@@ -1,6 +1,8 @@
 /* INDEX.HTML CSS  */
 
 /* anasayfa büyük resimler başlangıç */
+
+
 .panel {
 
     background-repeat: no-repeat;
@@ -100,7 +102,7 @@ hr {
     height: auto;
     display: flex;
     justify-content: center;
-    
+
 
 }
 
@@ -187,7 +189,7 @@ hr {
 
         display: inline-block;
         text-align: center;
-        
+
 
     }
 
@@ -203,10 +205,10 @@ hr {
 
 
     .vitraLinkDiv {
-        
+
         display: flex;
         flex-direction: column;
-justify-content: center;
+        justify-content: center;
     }
 
 
@@ -224,5 +226,43 @@ justify-content: center;
     }
 
 
+
+}
+
+
+
+
+@media (max-width: 350px) {
+
+
+
+
+
+    .vitraLinkDiv {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .vitraAndFacebook {
+        border: 5px solid yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .bodyContainer1 {
+        display: flex;
+        text-align: center;
+    }
+
+    .facebookframeDiv {
+        scale: 0.8;
+    }
+
+   
 
 }

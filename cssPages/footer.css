@@ -1,3 +1,17 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.mainFooter{
+    width: 100%;
+}
+
 .footer1 {
 
     width: 100%;
@@ -8,24 +22,25 @@
 
 
 .iconDivs{
-    
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .footer2 {
     display: flex;
     flex-direction: column;
-    
+   
     width: 100%;
-    height: 75px;
+    height: auto;
     background: #222534;
 }
 
 .footer2 p {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;

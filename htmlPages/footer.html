@@ -1,5 +1,9 @@
 <link rel="stylesheet" href="/cssPages/footer.css">
 
+
+
+<div class="mainFooter">
+
 <div class="footer1">
 
 </div>
@@ -21,21 +25,26 @@
     </div>
     <p> ABM İnşaat Copyright 2023</p>
 
+</div>
 
-    <script>
 
-const footerPlaceHolder = document.getElementById('footerPlaceHolder');
-fetch('/htmlPages/footer.html')
-    .then(response => response.text())
-    .then(html => {
-        footerPlaceHolder.innerHTML = html;
-        document.body.style.maxWidth = '100vw'
-        // document.body.style.boxSizing='border-box'
-
-    });
-
-    </script>
+   
 
 
 
 </div>
+
+
+<script>
+
+    const footerPlaceHolder = document.getElementById('footerPlaceHolder');
+    fetch('/htmlPages/footer.html')
+        .then(response => response.text())
+        .then(html => {
+            footerPlaceHolder.innerHTML = html;
+            document.body.style.maxWidth = '100vw'
+            // document.body.style.boxSizing='border-box'
+
+        });
+
+</script>
