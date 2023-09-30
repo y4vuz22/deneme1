@@ -1,39 +1,29 @@
-const panelT = document.querySelector('.panel');
+const panelT = document.querySelector('.mainPageImage');
 const imgElement = document.querySelector('.changingPictures1');
 
 const panelT1 = document.querySelectorAll('.panel');
 
+// console.log('dasdsadsadsa')
 
 let index = 0;
 
-let images = [
-    "/images/changingPictures/degisen1.jpg",
-    "/images/changingPictures/degisen2.jpg"
-
-
-]
 
 
 
-
-function change() {
-    imgElement.src = images[index];
-    index > 0 ? index = 0 : index++;
-}
 
 window.onload = function () {
-    setInterval(change, 3000);
-    setInterval(changeBodyImages, 2000);
+    setInterval(changeBodyImages, 3000);
 };
 
 let indexTwo = 0;
 
 let bodyImages = [
-    "/images/mainPageImages/res1.jpg",
-    "/images/mainPageImages/res2.jpg",
-    "/images/mainPageImages/res3.jpg",
-    "/images/mainPageImages/res4.jpg",
-    "/images/mainPageImages/res5.jpg",
+    "/images/mainPageImages/main01.jpg",
+    "/images/mainPageImages/main02.jpg",
+    "/images/mainPageImages/main03.jpg",
+    "/images/mainPageImages/main04.jpg",
+    "/images/mainPageImages/main05.jpg",
+    "/images/mainPageImages/main06.jpg",
 ]
 
 function changeBodyImages() {
@@ -41,9 +31,6 @@ function changeBodyImages() {
     indexTwo > 3 ? indexTwo = 0 : indexTwo++;
 }
 
-// window.onload = function () {
-//     setInterval(changeBodyImages, 3000);
-// };
 
 
 
@@ -68,11 +55,7 @@ function selectImage() {
 }
 
 
-// function removeActive() {
-//     panelT.forEach(panel => {
-//         panel.classList.remove("active");
-//     })
-// }
+
 
 
 const navbarPlaceholder = document.getElementById('navbar-placeholder');
@@ -93,11 +76,99 @@ fetch('/htmlPages/footer.html')
     .then(response => response.text())
     .then(html => {
         footerPlaceHolder.innerHTML = html;
-        // document.body.style.maxWidth = '100%'
-        // document.body.style.boxSizing='border-box'
+
         document.body.style.margin = '0';
         document.body.style.padding = '0';
         document.body.style.boxSizing = 'border-box';
 
 
+    });
+
+
+
+const typedTextSpan = document.querySelector('.typed-text');
+const cursor = document.querySelector('.cursor');
+
+
+const word1 = ["ALIŞVERİŞLERİNİZ İÇİN İNTERNET SİTEMİZİ ZİYARET EDEBİLİRSİNİZ"];
+
+
+const typingDelay = 100;
+const erasingDelay = 100;
+
+
+
+let indexAutoText = 0;
+let charIndex = 0;
+const newLetterDelay = 1000;
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // if (words.length) {
+
+    setTimeout(type, newLetterDelay);
+    // }
+});
+
+
+
+
+function type() {
+
+    if (charIndex < word1[indexAutoText].length) {
+
+        typedTextSpan.textContent += word1[indexAutoText].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingDelay);
+
+    } else {
+        setTimeout(erase, newLetterDelay);
+    }
+}
+
+
+function erase() {
+
+    if (charIndex > 0) {
+
+
+        typedTextSpan.textContent = word1[indexAutoText].slice(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, typingDelay)
+
+    } else {
+        indexAutoText++;
+        if (indexAutoText < word1.length) {
+            type()
+        }
+        else {
+            indexAutoText = 0;
+            type();
+        }
+    }
+}
+
+
+
+
+// let anasayfa = document.querySelector('/htmlPages/navbar.html .anasayfa');
+
+fetch('/htmlPages/navbar.html')
+    .then(response => response.text())
+    .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const elements = doc.querySelectorAll('.anasayfa'); // '.your-class' yerine kullanmak istediğiniz sınıf adını verin
+
+        console.log(elements)
+
+
+        // elements, tüm seçilen elementleri içeren bir NodeList'dir
+        elements.forEach(element => {
+            // Her bir element üzerinde işlem yapabilirsiniz
+            console.log(element.textContent);
+        });
+    })
+    .catch(error => {
+        console.error('HTML alınırken hata oluştu:', error);
     });

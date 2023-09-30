@@ -1,68 +1,189 @@
-<link rel="stylesheet" href="/cssPages/navbar.css">
+<!DOCTYPE html>
+<html lang="en">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/cssPages/navbar.css">
 
 
-<div class="header">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="header">
 
 
 
-    <div class="iconDivs">
 
-        <div class="iconD">
-            <img src="/images/facebookIcon.png" alt="Image NotFound">
-            <a href="https://www.facebook.com/abminsaat">Facebook</a>
+        <div class="iconContainer">
+
+            <div class="iconD">
+                <img src="/images/facebookIcon.png" alt="Image NotFound">
+                <a href="https://www.facebook.com/abminsaat">
+                    <p>Facebook</p>
+                </a>
+            </div>
+
+
+            <div class="iconD">
+                <img src="/images/Instagram-Icon.png" alt="Image NotFound">
+                <a href="https://www.instagram.com/abminsaat/">
+                    <p>Instagram</p>
+                </a>
+            </div>
+
         </div>
 
 
-        <div class="iconD">
-            <img src="/images/Instagram-Icon.png" alt="Image NotFound">
-            <a href="https://www.instagram.com/abminsaat/">Instagram</a>
+
+
+
+        <div class="addressDiv">
+
+            <img src="/images/home.png" alt="">
+            <address class="address">
+                <p>1. Murat Mah. Zübeyde Hanım Cad. No:32 Edirne</p>
+            </address>
         </div>
 
-    </div>
 
 
-    <div class="navbarImgDiv">
-        <img src="/images/abminsaat-logo-02-02.png" alt="">
-    </div>
 
-
-    <div class="addressDiv">
-        <img src="/images/home.png" alt="">
-        <address class="address">1. Murat Mah. Zübeyde Hanım CAd. No:32 Edirne</address>
     </div>
 
 
 
 
 
-</div>
 
 
-<nav class="navbar">
+    </div>
 
 
-    <!-- <i class="menuIcon"> <img src="/images/menu.jpg" alt=""></i> -->
-
-    <div class="ulDiv">
 
 
-        <ul>
-
-            <a class="aL" href="/index.html">ANASAYFA</a>
-            <a class="aL" href="/htmlPages/aboutUs.html">HAKKIMIZDA</a>
-            <a class="aL" href="/htmlPages/gallery.html">GALERİ</a>
-            <a class="aL" href="/htmlPages/services.html">HİZMETLERİMİZ</a>
-            <a class="aL" href="/htmlPages/products.html">ÜRÜNLERİMİZ</a>
-            <!-- <a href="/htmlPages/requestForm.html">TALEP FORMU</a> -->
-            <!-- <a href="contactUs.html">İLETİŞİM</a> -->
-            
 
 
-         
+
+
+    <div class="ulDiv" id="ulDiv">
+
+
+
+
+
+
+        <ul class="navbarUl">
+
+
+
+
+
+
+            <div class="navbarImgDiv2">
+                <img src="/images/abminsaat-logo-02-02.png" alt="">
+            </div>
+
+
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                <!-- <br> -->
+                <i class="fa-solid fa-x" style="
+                display: none;
+                font-size: 25px;
+                margin-top: 25px;
+                
+                "></i>
+            </a>
+
+
+
+            <li><a id="anasayfa" class="anasayfa" href="/index.html">
+                    <p>Anasayfa</p>
+                </a></li>
+
+
+
+
+            <li><a class="aL" href="/htmlPages/aboutUs.html">
+                    <p>Hakkımızda</p>
+                </a></li>
+
+
+
+
+                
+            <li class="dropdownGallery"><a class="aL" href="/htmlPages/gallery.html">
+                    <p>Galeri</p>
+                </a>
+
+
+                <ul class="dropdownDiv">
+
+                    <li><a class="aL" href="/htmlPages/gallery.html">
+                            <p>Mağazalarımız</p>
+                        </a>
+                    </li>
+
+
+                    <li><a class="aL" href="/htmlPages/gallery.html">
+                            <p>Depomuz</p>
+                        </a>
+                    </li>
+
+
+                    <li><a class="aL" href="/htmlPages/gallery.html">
+                            <p>Banyo</p>
+                        </a>
+                    </li>
+
+
+
+                </ul>
+
+
+
+
+            </li>
+
+
+
+
+
+            <li><a class="aL" href="/htmlPages/services.html">
+                    <p>Hizmetlerimiz</p>
+                </a></li>
+            <li><a class="aL" href="/htmlPages/products.html">
+                    <p>Ürünlerimiz</p>
+                </a></li>
+            <li><a href="/htmlPages/requestForm.html">
+                    <p>Talep Formu</p>
+                </a></li>
+            <li><a href="contactUs.html">
+                    <p>İletişim</p>
+                </a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         </ul>
@@ -73,24 +194,15 @@
 
 
 
-    <script>
-
-
-        const footerPlaceHolder = document.getElementById('footerPlaceHolder');
-        fetch('/htmlPages/footer.html')
-            .then(response => response.text())
-            .then(html => {
-                footerPlaceHolder.innerHTML = html;
-                // document.body.style.maxWidth = '100%'
-                // document.body.style.boxSizing='border-box'
-                document.body.style.margin = '0';
-                document.body.style.padding = '0';
-                document.body.style.boxSizing = 'border-box';
-
-
-            });
-    </script>
 
 
 
-</nav>
+
+
+
+
+
+    <script src="/jsPages/navbar.js"></script>
+</body>
+
+</html>

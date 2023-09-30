@@ -1,56 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@100&family=Roboto:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+/* font-family: 'Permanent Marker', cursive; */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', Arial;
 
 }
 
-/* header */
+
+body {
+    
+    background-color: #222534;
+   
+}
+
+
+
+
+/* üst iconlar facebook instagram adres baslangıc */
 
 
 
 .header {
 
-
-
-    margin-top: 15px;
+    margin-top: 5px;
     position: relative;
     width: 100%;
-    height: 50px;
-    /* background-color: black; */
-    background-color: #222534;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 25px;
-    text-align: center;
 }
 
 
-.iconDivs {
-    width: 100%;
+
+
+.iconContainer {
     display: flex;
-
-    margin: 0px 25px;
-
+    width: 100%;
+    margin-left: 10px;
 }
-
 
 .iconD {
     display: flex;
-
     padding: 10px;
     height: 100%;
     align-items: center;
-    font-size: 15px;
+
 }
 
-.iconD img {
+.header img {
 
     margin-right: 10px;
     width: 20px;
-    height: 30px;
+    height: 20px;
     align-items: center;
 }
 
@@ -58,131 +66,104 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 14px;
 }
 
 
 .addressDiv {
     width: 100%;
     margin-right: 20px;
-    /* border: 2px blue solid; */
-    height: 100%;
+
+
     display: flex;
-    justify-content: center;
+    justify-content: right;
+
     padding: 10px;
     color: white;
-
-
-}
-
-.address {
-    display: flex;
-    height: 100%;
-    color: white;
-    align-items: center;
-    font-family: sans-serif;
+    font-size: 14px;
     font-weight: bold;
-    font-size: 15px;
-}
-
-.addressDiv img {
-    margin: 0 10px;
-    margin-top: 5px;
-    width: 20px;
-    height: 20px;
-
-}
-
-.navbarImgDiv img {
-    width: 300px;
-    height: 50px;
 }
 
 
 
-
-
-/* navbar*/
-
-
-
-.navbar {
-
-
-    /* border: 3px solid black; */
-    width: 100%;
-    height: auto;
-    display: flex;
+/* üst iconlar facebook instagram adres son */
 
 
 
-}
-
-body {
-
-    background-color: #222534;
-    /* background-image: url(/images/galleryBackround.jpg); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
 
 
-.navbar ul {
-
-    width: 100%;
-
-    display: flex;
-    list-style: none;
-
-    align-items: center;
 
 
-
-}
 
 .ulDiv {
-    background-color: #222534;
-
     display: flex;
+    /* border: 2px solid yellow; */
+}
+
+
+
+.navbarUl {
+    list-style: none;
+    background-color: #222534;
+    /* background-color: blue; */
+    /* padding: 5px; */
+    position: relative;
+    display: flex;
+    flex: 10;
     width: 100%;
+    z-index: 1;
 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-items: center;
+
 }
 
-.ulDiv ul {
+.navbarUl li {
 
-    display: flex;
-    justify-content: center;
-    transform: skew(-25deg);
+    margin-bottom: 10px;
+    margin-left: 5px;
     width: 100%;
 
-    cursor: pointer;
+    align-items: center;
+    flex: 3;
 
+    list-style-type: none;
 }
 
 
-
-.ulDiv ul a:hover {
+.ulDiv ul p:hover {
     background: white;
     color: black;
-    transition: 1s;
+    transition: 1s ease;
+
 }
 
-
-.navbar ul a {
-    text-align: center;
-    width: 180px;
-    height: auto;
+.navbarUl li a {
     text-decoration: none;
-    color: gold;
-    font-weight: bold;
-    position: relative;
-    margin-right: 10px;
-    box-shadow: rgba(177, 33, 33, 0.75) 0px 5px 15px;
 
-    padding: 20px;
-    font-size: 14px;
+
+}
+
+.navbarUl li p {
+    text-align: center;
+    
+
+    color: gold;
+    
+    position: relative;
+    height: 50px;
+    
+    border-radius: 10px;
+    border: 1px gray solid;
+
+    padding: 10px;
+    font-family: 'Poppins Arial';
+    font-weight: bold;
+    font-size: 18px;
     transition: 0.6s ease;
     background-color: #222534;
 
@@ -190,77 +171,312 @@ body {
 
 
 
-.navbar ul a:hover::before {
 
-    opacity: 1;
-    bottom: -8px;
-    right: -1px;
 
+
+.navbarImgDiv2 {
+    
+    display: flex;
+    width: 100%;
+    flex: 15;
+    
 }
 
 
-.navbar ul a:hover:after {
-    opacity: 1;
-    top: -8px;
-    right: -1px;
+.navbarImgDiv2 img {
 
-}
-
-.navbarImgDiv {
-
-    cursor: pointer;
-    background-color: antiquewhite;
-    z-index: 1;
-    box-shadow: rgba(177, 33, 33, 0.75) 0px 5px 15px;
-
-}
-
-
-
-.menuIcon img {
-    width: 100px;
+    width: 300px;
     height: 50px;
-    z-index: 3;
+    margin-top: 10px;
+    border-radius: 55px;
+    /* display: none; */
+
+}
+
+
+/* ------------------------------------------ */
+
+.dropdownDiv {
+
+
+    /* display: none; */
+    position: absolute;
+
+
+
+    /* position: relative; */
+    /* width: 50%; */
+    z-index: 1;
+
+    overflow: hidden;
+
+
+    max-height: 0;
+    transition: 1s;
+
+    top: -50px;
+
+}
+
+
+.dropdownGallery {
+    /* border: 2px solid yellow; */
+    position: relative;
+
+}
+
+
+
+.dropdownDiv a {
+
+
+    /* display: block; */
+
+    /* margin: 5px; */
+
 
 }
 
 
 
 
-@media (max-width: 1350px) {
 
 
-    .ulDiv ul a {
-        font-size: 12px;
-        /* scale: 0.8 */
+.dropdownGallery:hover .dropdownDiv {
+    display: block;
+    /* z-index: 1; */
+    /* border-radius: 15px; */
+    /* width: 100%; */
+
+    overflow: visible;
+    min-height: 180px;
+
+    top: 50px;
+    /* right: -10px; */
+
+}
+
+
+/* .dropdownGallery:hover .dropdownDiv {
+    transform: translateY(0);
+} */
+
+
+.icon {
+    color: white;
+    display: none;
+    font-size: 30px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+@media screen and (max-width: 1720px) {
+
+
+    .navbarImgDiv2 {
+        flex: 1;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1351px) {
+    .ulDiv li {
+        display: none;
+
+
+    }
+
+    .ulDiv a.icon {
+        float: right;
+        display: block;
+        text-decoration: none;
+        text-align: right;
+        margin-right: 10px;
+        right: 0;
+        top: 0;
+    }
+
+    .ulDiv.responsive .icon {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+
+    }
+
+    .navbarUl li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ulDiv.responsive li {
+
+        display: block;
+        text-align: left;
+    }
+
+
+    .ulDiv ul {
+
+        height: auto;
+        /* display: flex; */
+        flex-direction: column;
+
+
+
+    }
+
+
+    .dropdownDiv {
+        position: relative;
+
+
+
+    }
+
+
+
+
+
+
+    .dropdownGallery:hover .dropdownDiv {
+        display: flex;
+        /* z-index: 1; */
+        /* border-radius: 15px; */
+        /* width: 100%; */
+        justify-content: center;
+        overflow: visible;
+        min-height: 180px;
+
+        top: 5px;
+
+
+    }
+
+
+    .navbarUl li {
+
+        width: 75%;
+
+
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .ulDiv.responsive {
+        position: relative;
+
+    }
+
+    .navbarUl.responsive .icon {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+
+
+    .ulDiv ul {
+
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .navbarUl li {
+
+        width: 75%;
     }
 }
 
-@media (max-width: 1080px) {
 
 
 
-    .ulDiv ul a {
 
-        width: 110px;
-        padding: 5px;
+
+@media (max-width: 1100px) {
+
+
+
+    .menuIcon {
+        margin: 10px;
+        display: block;
+
     }
-}
 
-@media (max-width: 857px) {
-
-
-
-
-
-
-    .addressDiv {
+    .navbarImgDiv {
         display: none;
     }
 
+    .navbarImgDiv2 img {
+
+        border-radius: 55px;
+        display: inline;
+
+    }
+
+
+    .navbarUl li {
+        width: 75%;
+    }
 
 
 
+}
+
+
+.navbarImgDiv2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 775px) {
+
+
+
+
+
+
+
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .iconContainer {
+        justify-content: center;
+    }
+
+    .addressDiv {
+        justify-content: center;
+    }
+
+
+    .navbarUl li {
+        width: 75%;
+    }
 
 }
 
@@ -270,36 +486,9 @@ body {
 
 
 
-    .navbarImgDiv {
-        display: none;
-    }
 
     .mainPageImages {
         margin: 10px 0;
-    }
-
-    .navbar a {
-        /* display: none; */
-        visibility: hidden;
-
-    }
-
-
-
-
-
-
-
-}
-
-
-
-@media (max-width: 375px) {
-
-
-
-    .addressDiv {
-        display: none;
     }
 
 

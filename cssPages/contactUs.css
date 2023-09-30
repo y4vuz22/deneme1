@@ -1,0 +1,28 @@
+.dealersPanel {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.dealers {
+    margin: 30px 0;
+
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.dealers h2 {
+    text-align: center;
+    color: orangered;
+}
+
+.dealersPanel h4 {
+    margin-top: 20px;
+    color: chocolate;
+}
+
+

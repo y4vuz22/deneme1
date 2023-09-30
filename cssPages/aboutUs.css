@@ -1,7 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
 
 
 
 
+.aboutUsContainer p {
+
+    margin: 15px;
+    letter-spacing: 1px;
+    text-align: justify;
+    color: rgb(176, 194, 141);
+    font-family: 'Poppins', sans-serif;
+
+}
 
 .abousUsImage {
     height: 120px;
@@ -9,45 +28,163 @@
 }
 
 
-.aboutUsContainer{
-    width: 100%;
+.aboutUsContainer {
+    width: auto;
     height: 100%;
-    margin: 55px 15px;
+    margin: 35px 30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     box-shadow: rgba(201, 190, 190, 0.35) 0px 5px 15px;
-    
-    
+    padding: 25px;
+
+    /* border: 2px solid yellow; */
+
 }
 
+.missionContainer {
+    padding: 25px;
+    margin-top: 30px;
 
-.textContainer{
-    margin: 30px 0;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: center;
+    flex: 5;
+
+    box-shadow: rgba(201, 190, 190, 0.35) 0px 5px 15px;
+    border: 2px solid rgb(143, 151, 99);
+}
+
+strong {
+    font-size: 16px;
+    color: gold;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
+
+}
+
+.textContainer {
+    padding: 25px;
+    margin-top: 30px;
+
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: center;
+
     border: 2px solid rgb(143, 151, 99);
     width: 700px;
-    padding: 10px;
+
     box-shadow: rgba(201, 190, 190, 0.35) 0px 5px 15px;
 
-    
+    flex: 5;
+
+
 }
 
-p{
-    margin: 15px;
-    letter-spacing: 1px;
-    text-align: justify;
-    color: rgb(243, 245, 239);
+
+.textContainer img {
+    width: 600px;
 }
+
+
 
 p a {
     color: azure;
 }
 
-.abmvitra-sanalturDiv img{
-    width: 370;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+
+
+
+
+.missionContainer h2 {
+    text-align: center;
+    color: rgb(228, 209, 36);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 32px;
 }
 
 
+.missionHead {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transform: translate(-10%);
+}
+
+.missionHead2 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transform: translate(-15%);
+    margin-bottom: 30px;
+}
+
+.missionHead img {
+    width: 100px;
+}
+
+.missionHead2 img {
+    width: 250px;
+}
+
+
+
+
+@media (max-width: 1480px) {
+
+
+
+
+
+
+
+    .aboutUsContainer p {
+        font-size: 12px;
+    }
+
+    .aboutUsContainer {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+
+
+    .aboutUsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+
+    }
+
+    .textContainer {
+        text-align: center;
+        width: auto;
+    }
+
+
+
+
+
+}
+
+
+
+
+@media (max-width: 700px) {
+
+
+
+    .textContainer img {
+        width: 400px;
+    }
+
+
+
+}
