@@ -6,6 +6,10 @@ const gallery = document.querySelectorAll(".image"),
     totalImg = previewBox.querySelector(".total-img"),
     shadow = document.querySelector(".shadow");
 
+ 
+
+
+
 window.onload = () => {
     for (let i = 0; i < gallery.length; i++) {
         totalImg.textContent = gallery.length; //passing total img length to totalImg variable
@@ -64,6 +68,9 @@ window.onload = () => {
 
     }
 }
+
+
+
 
 
 
