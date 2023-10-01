@@ -227,15 +227,7 @@ body {
 
 
 
-.dropdownDiv a {
 
-
-    /* display: block; */
-
-    /* margin: 5px; */
-
-
-}
 
 
 
@@ -251,15 +243,12 @@ body {
     overflow: visible;
     min-height: 180px;
 
-    top: 50px;
+    top: 53px;
     /* right: -10px; */
 
 }
 
 
-/* .dropdownGallery:hover .dropdownDiv {
-    transform: translateY(0);
-} */
 
 
 .icon {
