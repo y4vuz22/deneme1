@@ -3,36 +3,57 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@100&family=Roboto:ital,wght@0,100;1,100&family=Source+Sans+3:wght@200&display=swap');
 
+@font-face {
+    font-family: "Eurostar Regular Extended";
+    src: url("eurostarregularextended.eot?") format("eot"), url("eurostarregularextended.woff") format("woff"), url("eurostarregularextended.ttf") format("truetype"), url("eurostarregularextended.svg#EurostarRegularExtended") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 /* ÜST RESİM VİDEO PANELİ BASLANGIC  */
 
+body {
+    background-color: #f0f0f0;
+}
+
 .mainBox {
 
 
-    margin: 25px;
 
 
+  
+    margin-top: 110px;
     height: auto;
     display: flex;
 
     justify-content: center;
     align-items: center;
+
 }
 
 
+.boxImg {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
 
 .boxImg img {
 
-    width: 700px;
-    height: 600px;
+    width: 100%;
+    /* height: 750px; */
     background-image: url('tekirdag6.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: transform 60s linear;
+    /* 10 saniyede bir geçiş yapacak */
 
 
-    -webkit-mask: url('/images/deneme06.png');
+    /* -webkit-mask: url('/images/deneme06.png'); */
     -webkit-mask-size: 10;
     -webkit-mask-repeat: no-repeat;
 
@@ -42,15 +63,165 @@
 
 }
 
+.boxImg img:hover {
+    transform: scale(1.5);
+    /* Fare üzerine gelindiğinde 1.5 katına çıkacak */
 
+}
+
+
+/* Gallery Header H Başlangıç  */
+
+.galleryHeaderH {
+
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    font-family: "Eurostar Regular Extended";
+    /* color: rgb(97, 93, 93); */
+    /* color: rgb(185, 134, 39); */
+
+    font-size: 28px;
+    letter-spacing: 6px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+/* Gallery Header H Son  */
+
+
+
+
+
+
+
+/* Gallery Container Baslangıc  */
+
+
+.gallery-container {
+
+
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 40px 20px;
+
+    overflow: hidden;
+    border: 1px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+
+
+
+.photo-gallery {
+
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+
+
+    
+}
+
+
+.photo img {
+
+    width: 100%;
+    /* height: 100%; */
+    cursor: pointer;
+    transition: ease-in 1s;
+    /* opacity: 0.8; */
+    
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    color: azure;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 1;
+    font-family: "Eurostar Regular Extended";
+
+}
+
+
+
+/* .photo-gallery .column h2 {
+    font-family: "Eurostar Regular Extended";
+    color: rgb(97, 93, 93);
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+} */
+
+.photo {
+    overflow: hidden;
+    position: relative;
+    /* height: 100%; */
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.photo img:hover {
+    scale: 1.2;
+}
+
+/* Gallery Container Son  */
+
+
+.boxVideo {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.boxVideo h1 {
+    justify-content: center;
+    font-family: "Eurostar Regular Extended";
+
+    font-size: 28px;
+    letter-spacing: 6px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    /* text-decoration: underline; */
+}
 
 .boxVideo video {
 
+    margin-top: 50px;
 
 
-    width: 1100px;
-    height: 600px;
-    /* padding: 30px; */
+    height: 500px;
+
 
 
 
@@ -59,7 +230,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    -webkit-mask: url('/images/deneme06.png');
+    /* -webkit-mask: url('/images/deneme06.png'); */
     -webkit-mask-size: 10;
     -webkit-mask-repeat: no-repeat;
 
@@ -121,7 +292,114 @@
 
 
 
+/* FACEBOOK CONTAİNER BASLANGIC  */
 
+
+
+
+
+/* FACEBOOK CONTAİNER SON  */
+
+
+
+
+.facebook-MainContainer {
+
+    /* border: 2px solid black; */
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    margin-top: 150px;
+
+}
+
+.container {
+    /* border: 2px solid blue; */
+    text-align: center;
+    width: 75%;
+    position: relative;
+}
+
+
+.facebook-MainContainer h1 {
+    font-family: "Eurostar Regular Extended";
+    color: black;
+    font-size: 24px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    /* margin: 20px;     */
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item {
+    text-align: center;
+    margin: 5px;
+    /* Resimler arasında boşluk bırakabilirsiniz */
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.centered-image {
+    position: absolute;
+    text-align: center;
+    /* margin-top: 20px; */
+    z-index: 2;
+    /* border: 20px solid black; */
+    cursor: pointer;
+}
+
+.centered-image img {
+    width: 100px;
+    /* Küçük resmin genişliğini ve yüksekliğini istediğiniz gibi ayarlayabilirsiniz */
+    height: auto;
+    border-radius: 150px;
+}
+
+
+.centered-image {
+    width: 100px;
+    height: 100px;
+    /* border: 2px solid black; */
+    content: "";
+    /* background: url(facebookLogo.png); */
+    z-index: 100;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -132,51 +410,62 @@
 /* BAYİLİKLER BAŞLANGIÇ  */
 
 
-.mainDealer {
-    display: block;
-    text-align: center;
 
-}
+.logoMainContainer {
 
-.mainDealer h1 {
-    margin-top: 130px;
-    margin-bottom: 30px;
-    color: crimson;
-
-
-    letter-spacing: 3px;
-    font-family: 'Permanent Marker', cursive;
-
-
-}
-
-.dealerLinkMain {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-
-    grid-template-rows: repeat(3, 1fr);
-
-    gap: 20px;
-
-}
-
-.dealer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #f0f0f0;
+}
+
+.containerLogo {
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    /* Container genişliğini istediğiniz gibi ayarlayabilirsiniz */
+}
+
+
+.picture-band {
+
+
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: kaydir 15s linear;
+    /* Belirtilen sürede bir kayacak */
+    animation-iteration-count: infinite;
+    /* Sonsuz tekrar etmesini sağlar */
 
 
 
 }
 
-
-
-.dealer img {
-    width: 200px;
-    height: 200px;
-    border: solid orange;
-
+.picture-band img {
+    width: 100px;
+    /* height: 200px; */
+    height: auto;
+    /* Oranları koruyacak şekilde yüksekliği otomatik ayarlayın */
+    margin-right: 25px;
+    /* Resimler arasında boşluk bırakabilirsiniz */
 }
 
+@keyframes kaydir {
+    0% {
+        transform: translateX(100%);
+        /* Başlangıçta sağda başlayacak */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Tamamen sola kayacak */
+    }
+}
 
 
 /* BAYİLİKLER SON  */
@@ -185,11 +474,11 @@
 @media (max-width: 1750px) {
 
 
-    .boxImg img {
+    /* .boxImg img {
 
         width: 600px;
         height: 500px;
-    }
+    } */
 
     .boxVideo video {
         width: 900px;
@@ -206,11 +495,11 @@
 
 
 
-    .boxImg img {
+    /* .boxImg img {
 
         width: 500px;
         height: 450px;
-    }
+    } */
 
     .boxVideo video {
         width: 750px;
@@ -224,11 +513,11 @@
 
 
 
-    .boxImg img {
+    /* .boxImg img {
 
         width: 400px;
         height: 350px;
-    }
+    } */
 
     .boxVideo video {
         width: 650px;
@@ -255,7 +544,7 @@
 @media (max-width: 1050px) {
 
 
-   
+
 
 
 
@@ -269,12 +558,12 @@
         height: 500px;
     }
 
-
+    /* 
     .boxImg img {
 
         width: 300px;
         height: 300px;
-    }
+    } */
 
     .boxVideo video {
         width: 550px;
@@ -295,9 +584,9 @@
 
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    
+
         grid-template-rows: repeat(3, 1fr);
-    
+
         gap: 15px;
     }
 
@@ -325,10 +614,10 @@
         gap: 15px;
     }
 
-    .boxImg img {
+    /* .boxImg img {
 
         display: none;
-    }
+    } */
 
 
 }

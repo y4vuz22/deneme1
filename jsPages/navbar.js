@@ -7,7 +7,7 @@ function myFunction() {
   var x = document.getElementById("ulDiv");
   var icon1 = document.querySelector('.fa-bars')
   var icon2 = document.querySelector('.fa-x')
-
+var img = document.querySelector('.navbarImgDiv2')
 
 
 
@@ -15,11 +15,13 @@ function myFunction() {
     x.className += " responsive";
     icon1.style.display = "none";
     icon2.style.display = "block";
+    // img.style.display='none';
 
   } else {
     x.className = "ulDiv";
     icon1.style.display = "block";
     icon2.style.display = "none";
+    // img.style.display='flex';
 
 
   }

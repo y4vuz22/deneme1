@@ -18,12 +18,12 @@ window.onload = function () {
 let indexTwo = 0;
 
 let bodyImages = [
-    "/images/mainPageImages/main01.jpg",
-    "/images/mainPageImages/main02.jpg",
-    "/images/mainPageImages/main03.jpg",
-    "/images/mainPageImages/main04.jpg",
-    "/images/mainPageImages/main05.jpg",
-    "/images/mainPageImages/main06.jpg",
+    "/images/mainPageImages/intemaInova.jpeg",
+    "/images/mainPageImages/vitraMain.jpg",
+    "/images/mainPageImages/sienaIntema.jpg",
+    "/images/mainPageImages/toscanaIntema.jpeg",
+    "/images/mainPageImages/vegaIntema.jpeg",
+    
 ]
 
 function changeBodyImages() {

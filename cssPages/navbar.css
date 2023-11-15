@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@100&family=Roboto:ital,wght@0,100;1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+
 
 /* font-family: 'Permanent Marker', cursive; */
 
@@ -9,84 +11,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', Arial;
-
-}
-
-
-body {
     
-    background-color: #222534;
-   
-}
-
-
-
-
-/* üst iconlar facebook instagram adres baslangıc */
-
-
-
-.header {
-
-    margin-top: 5px;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    margin-bottom: 25px;
-}
-
-
-
-
-.iconContainer {
-    display: flex;
-    width: 100%;
-    margin-left: 10px;
-}
-
-.iconD {
-    display: flex;
-    padding: 10px;
-    height: 100%;
-    align-items: center;
 
 }
 
-.header img {
-
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-    align-items: center;
-}
-
-.iconD a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-
-.addressDiv {
-    width: 100%;
-    margin-right: 20px;
-
-
-    display: flex;
-    justify-content: right;
-
-    padding: 10px;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-
-
-/* üst iconlar facebook instagram adres son */
 
 
 
@@ -97,41 +25,39 @@ body {
 
 
 .ulDiv {
-    display: flex;
-    /* border: 2px solid yellow; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+z-index: 1000;
+
 }
 
 
 
 .navbarUl {
+    
+
     list-style: none;
-    background-color: #222534;
-    /* background-color: blue; */
-    /* padding: 5px; */
     position: relative;
     display: flex;
-    flex: 10;
+    justify-content: center;
+    /* flex: 10; */
     width: 100%;
-    z-index: 1;
-
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 10000;
     cursor: pointer;
-    margin-right: 20px;
-    margin-left: 20px;
     align-items: center;
-
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .navbarUl li {
 
     margin-bottom: 10px;
-    margin-left: 5px;
     width: 100%;
-
     align-items: center;
     flex: 3;
-
     list-style-type: none;
+    
 }
 
 
@@ -150,46 +76,39 @@ body {
 
 .navbarUl li p {
     text-align: center;
-    
-
-    color: gold;
-    
+    color: rgb(185, 134, 39);
     position: relative;
-    height: 50px;
-    
-    border-radius: 10px;
-    border: 1px gray solid;
-
     padding: 10px;
-    font-family: 'Poppins Arial';
+    font-family: 'Overpass', sans-serif;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     transition: 0.6s ease;
-    background-color: #222534;
-
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
-
-
-
-
 
 
 .navbarImgDiv2 {
-    
     display: flex;
-    width: 100%;
-    flex: 15;
-    
+    justify-content: center;
+    margin-bottom: 15px;
 }
+
+
+
+
+
+
 
 
 .navbarImgDiv2 img {
 
-    width: 300px;
-    height: 50px;
+    width: 325px;
+    height: 80px;
     margin-top: 10px;
-    border-radius: 55px;
-    /* display: none; */
+
 
 }
 
@@ -199,28 +118,26 @@ body {
 .dropdownDiv {
 
 
-    /* display: none; */
     position: absolute;
 
-
-
-    /* position: relative; */
-    /* width: 50%; */
-    z-index: 1;
-
+    background-color: whitesmoke;
+    border-radius: 5px;
+    z-index: 100;
     overflow: hidden;
-
-
     max-height: 0;
     transition: 1s;
-
     top: 0px;
+    width: 100%;
+    
 
 }
 
 
+
+
+
 .dropdownGallery {
-    /* border: 2px solid yellow; */
+
     position: relative;
 
 }
@@ -234,28 +151,16 @@ body {
 
 
 
-.dropdownGallery:hover .dropdownDiv {
-
-    /* display: block;
-
-    overflow: visible;
-    min-height: 180px;
-
-    margin-top: 53px; */
-
-
-}
 
 
 
+.dropdownOpen {
 
-.dropdownOpen{
-
-     display: block;
+    display: block;
 
     overflow: visible;
-    min-height: 180px;
-
+    min-height: 140px;
+    
     margin-top: 53px;
 }
 
@@ -273,23 +178,23 @@ body {
 
 
 
-@media screen and (max-width: 1720px) {
-
-
-    .navbarImgDiv2 {
-        flex: 1;
-    }
-
-}
-
-
 
 @media screen and (max-width: 1351px) {
+
+
+    .navbarImgDiv2 img {
+        display: none;
+    }
+
+
     .ulDiv li {
         display: none;
 
 
     }
+
+
+
 
     .ulDiv a.icon {
         float: right;
@@ -338,35 +243,26 @@ body {
 
     }
 
+    .dropdownOpen {
 
 
 
-
-
-    .dropdownGallery:hover .dropdownDiv {
-        display: flex;
-        /* z-index: 1; */
-        /* border-radius: 15px; */
-        /* width: 100%; */
-        justify-content: center;
-        overflow: visible;
-        min-height: 180px;
-
-        top: 5px;
-
-
+        margin-top: 10px;
     }
 
 
-    .navbarUl li {
-
-        width: 75%;
 
 
 
-    }
+
+
 
 }
+
+
+
+
+
 
 @media screen and (max-width: 1000px) {
     .ulDiv.responsive {
@@ -391,109 +287,6 @@ body {
 
 
     }
-
-    .navbarUl li {
-
-        width: 75%;
-    }
-}
-
-
-
-
-
-
-@media (max-width: 1100px) {
-
-
-
-    .menuIcon {
-        margin: 10px;
-        display: block;
-
-    }
-
-    .navbarImgDiv {
-        display: none;
-    }
-
-    .navbarImgDiv2 img {
-
-        border-radius: 55px;
-        display: inline;
-
-    }
-
-
-    .navbarUl li {
-        width: 75%;
-    }
-
-
-
-}
-
-
-.navbarImgDiv2 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 775px) {
-
-
-
-
-
-
-
-
-    .header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
-    .iconContainer {
-        justify-content: center;
-    }
-
-    .addressDiv {
-        justify-content: center;
-    }
-
-
-    .navbarUl li {
-        width: 75%;
-    }
-
-}
-
-
-@media (max-width: 650px) {
-
-
-
-
-
-    .mainPageImages {
-        margin: 10px 0;
-    }
-
-
-
-
 
 
 }
